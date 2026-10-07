@@ -1,0 +1,13 @@
+フォント変更用
+CSS側　bodyに追加
+
+１．font-family: "M PLUS Rounded 1c", sans-serif;
+２．font-family: "Zen Maru Gothic", sans-serif;
+
+
+HTML側
+
+
+１．M+PLUS+Rounded+1c
+２．Zen+Maru+Gothic
+

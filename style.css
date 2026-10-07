@@ -1,0 +1,641 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Zen Maru Gothic", sans-serif;
+    background: #f8f8f8;
+    color: #222;
+}
+
+/* ヘッダー */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 40px;
+    background: #ffffff;
+}
+
+/* ロゴ */
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+/* ナビゲーション */
+
+nav {
+    display: flex;
+    gap: 24px;
+    font-family: sans-serif;
+}
+
+h2 {
+    font-family: sans-serif;
+}
+
+.page-title {
+    font-family: sans-serif;
+}
+
+nav a {
+    color: #222;
+    text-decoration: none;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+/* メインビジュアル */
+
+.hero {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+/* メインタイトル */
+
+.hero h1 {
+    font-size: 64px;
+    letter-spacing: 8px;
+    margin: 20px 0;
+}
+
+/* メインビジュアルの小見出し */
+
+.hero-subtitle {
+    font-size: 12px;
+    letter-spacing: 4px;
+    margin: 0;
+}
+
+/* メインビジュアルの説明文 */
+
+.hero > p:not(.hero-subtitle) {
+    font-size: 16px;
+    margin: 0 0 30px;
+    line-height: 1.8;
+}
+
+/* ボタン */
+
+.button {
+    display: inline-block;
+    padding: 14px 32px;
+    background: #222;
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+/* 商品一覧 */
+
+.product-list {
+    display: flex;
+    gap: 24px;
+    margin-top: 40px;
+    align-items: flex-end;
+}
+
+.product-card {
+    flex: 1;
+}
+
+.image-placeholder {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background: #e8e8e8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #888;
+}
+
+/* 商品名 */
+
+.product-card h3 {
+    margin: 16px 0 6px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* 商品説明 */
+
+.product-card p {
+    margin: 0;
+    font-size: 13px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* セクション見出し */
+
+.section {
+    padding: 100px 40px;
+}
+
+.section h2 {
+    margin: 0;
+    font-size: 30px;
+    letter-spacing: 4px;
+}
+
+.section-description {
+    margin: 12px 0 0;
+    color: #666;
+    font-size: 14px;
+}
+
+/* PICK UP */
+
+.pickup {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    padding: 100px 40px;
+    background: #ffffff;
+}
+
+.pickup-image {
+    flex: 1;
+    aspect-ratio: 1 / 1;
+    background: #e8e8e8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #888;
+}
+
+/*  PICK UP　の文章 */
+
+.pickup-text {
+    flex: 1;
+}
+
+.pickup-text p:first-child {
+    font-size: 12px;
+    letter-spacing: 3px;
+    margin: 0 0 16px;
+}
+
+.pickup-text h2 {
+    margin: 0 0 16px;
+    font-size: 32px;
+    letter-spacing: 3px;
+}
+
+/* PICK UP の説明文 */
+
+.pickup-text p:not(:first-child) {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.8;
+    margin: 0 0 30px;
+}
+
+/* PICK UP のボタン */
+
+.pickup-text .button {
+    margin: 4px;
+}
+
+/* 商品カテゴリー */
+
+.category-list {
+    display: flex;
+    gap: 24px;
+    margin-top: 40px;
+}
+
+.category-card {
+    flex: 1;
+}
+
+.category-card h3 {
+    margin: 16px 0 6px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* カテゴリー説明 */
+
+.category-card p {
+    margin: 0;
+    font-size: 13px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* テキストリンク */
+
+.text-link {
+    display: block;
+    margin-top: 30px;
+    color: #222;
+    text-decoration: none;
+    font-size: 13px;
+    letter-spacing: 2px;
+    text-align: right;
+}
+
+/* キャラクター */
+
+.character-list {
+    display: flex;
+    gap: 24px;
+    margin-top: 40px;
+}
+
+.character-card {
+    flex: 1;
+    text-align: center;
+}
+
+.character-card .image-placeholder {
+    aspect-ratio: 3 / 4;
+}
+
+/* キャラクター名 */
+
+.character-card h3 {
+    margin: 16px 0 6px;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+/* キャラクター紹介文 */
+
+.character-card p {
+    margin: 0;
+    font-size: 13px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* キャラクター図鑑リンク */
+
+.character-section .text-link {
+    display: block;
+    text-align: right;
+}
+
+/* イラストギャラリー */
+
+.illustration-list {
+    display: flex;
+    gap: 24px;
+    margin-top: 40px;
+}
+
+.illustration-list {
+    flex: 1;
+}
+
+.illustration-list .image-placeholder {
+    aspect-ratio: 4 / 3;
+}
+
+/* イラスト一覧リンク */
+
+.illustration-list + .text-link {
+    display: block;
+    text-align: right;
+}
+
+/* ABOUT */
+
+.about {
+    padding: 100px 40px;
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-image {
+    flex: 1;
+    aspect-ratio: 4 / 3;
+    background: #e8e8e8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #888;
+}
+
+/* フッター */
+
+footer {
+    padding: 60px 40px 30px;
+    background: #222;
+    color: #fff;
+    text-align: center; 
+}
+
+footer .logo {
+    color: #fff;
+    margin-bottom: 16px;
+}
+
+footer p {
+    margin: 6px 0;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+footer .copyright {
+    margin-top: 30px;
+    color: #aaa;
+}
+
+/* フッターのレイアウト */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer nav {
+    margin-top: 20px;
+}
+
+footer nav a {
+    color: #fff;
+}
+
+/* ページ全体の横幅 */
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* CATEGORY の背景 */
+
+.category-section {
+    background: #f3f3f3;
+}
+
+
+/* PRODUCTS ページのカテゴリー */
+
+.product-category {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+/* 商品価格 */
+
+.product-price {
+    margin: 8px 0 0;
+    font-size: 14px;
+    font-weight: 500;
+    color: #222;
+    letter-spacing: 1px;
+}
+
+/* 商品カードのリンク */
+
+.product-card {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+}
+
+/* 商品詳細 */
+
+.product-detail {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+
+.product-detail-image {
+    flex: 1;
+    aspect-ratio: 1 / 1;
+    background: #e8e8e8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #888;
+}
+
+.product-detail-text {
+    flex: 1;
+}
+
+.product-detail-text p:not(.section-label):not(.product-price) {
+    color: #666;
+    line-height: 1.8;
+}
+
+/* 商品詳細の商品名 */
+
+.product-detail-text h1 {
+    margin: 12px 0 16px;
+    font-size: 32px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+/* 商品詳細の価格 */
+
+.product-detail-text .product-price {
+    margin: 0 0 24px;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+/* 商品詳細画像 */
+
+.product-detail-image {
+    border-radius: 4px;
+}
+
+/* 商品画像の補足 */
+
+.product-detail-image-area {
+    flex: 1;
+}
+
+.product-image-note {
+    margin: 8px 0 0;
+    font-size: 11px;
+    color: #999;
+}
+
+/* 購入ボタン */
+
+.product-button {
+    display: inline-block;
+    margin: 24px 0;
+    padding: 14px 28px;
+    background: #222;
+    color: #fff;
+    text-decoration: none;
+    font-size: 12px;
+    letter-spacing: 2px;
+    transition: opacity 0.3s;
+}
+
+.product-button:hover {
+    opacity: 0.7;
+}
+
+/* 商品ページの戻るリンク */
+
+.product-detail-text .text-link {
+    display: block;
+    margin-top: 12px;
+}
+
+/* 商品カードのホバー */
+
+.product-card {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-4px);
+    opacity: 0.85;
+}
+
+/* 商品カテゴリー見出し */
+
+.product-category h2 {
+    margin-bottom: 12px;
+    font-size: 28px;
+    font-weight: 500;
+    letter-spacing: 3px;
+}
+
+/* 商品カテゴリーの説明 */
+
+.product-category .section-description {
+    margin-bottom: 32px;
+    color: #666;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+/* PRODUCTSページのタイトル */
+
+main > .section:first-child h1 {
+    margin: 20px 0 16px;
+    font-size: 42px;
+    font-weight: 500;
+    letter-spacing: 4px;
+}
+
+main > .section:first-child .section-description {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+/* CHARACTER ATR */
+
+.character-list {
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+    gap: 40px 24px;
+    margin-top: 40px;
+}
+
+.character-card {
+    flex: 1;
+}
+
+.character-image {
+    aspect-ratio: 1 / 1;
+    background: #e8e8e8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #888;
+}
+
+.character-card p {
+    margin: 16px 0 6px;
+    font-size: 16px;
+}
+
+.character-card a {
+    font-size: 13px;
+    text-decoration: none;
+    color: #222;
+}
+
+.character-links {
+    display: flex;
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.character-links a {
+    font-size: 13px;
+    text-decoration: none;
+    color: #222;
+}
+
+/* スマホ表示 */
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    header nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px 20px;
+    }
+
+    header nav a {
+        font-size: 12px;
+    }
+
+    .about {
+        flex-direction: column;
+        padding: 60px 24px;
+        gap: 30px;
+    }
+
+    .about-text {
+        width: 100%;
+    }
+
+    .about-image {
+        width: 100%;
+    }
+}
+
+.character-list .character-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
